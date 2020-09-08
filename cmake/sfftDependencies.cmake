@@ -71,7 +71,7 @@ endif( simage_FOUND )
 ## #################################################################
 add_definitions (${SL_DEFINITIONS})
 include_directories (${SL_INCLUDE_DIRS})
-link_directories(${SL_INCLUDE_DIRS})
+link_directories(${SL_LIBRARY_DIRS})
 set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${SL_C_FLAGS}")
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${SL_CXX_FLAGS}")
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")

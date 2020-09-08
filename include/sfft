@@ -1,0 +1,3 @@
+#include "../src/sfft/SFFT.h"
+#include "../src/SFFTConvolutionFilter.h"
+#include "../src/SFFTShortcuts.h"

@@ -1,0 +1,16 @@
+IF(UNIX)
+  #SET(sfft_LIB_NAME "@sfft_LIBRARY_DIR@libsfft.a")
+  SET(sfft_LIB_NAME "libsfft.a")
+ELSEIF(WIN32)
+  #SET(sfft_LIB_NAME "@sfft_LIBRARY_DIR@sfft.lib")
+  SET(sfft_LIB_NAME "sfft.lib")
+ENDIF(UNIX)
+
+SET(sfft_INCLUDE_DIRS "@sfft_INCLUDE_DIR@")
+SET(sfft_LIBRARY_DIRS "@sfft_LIBRARY_DIR@")
+SET(sfft_LIBRARIES ${sfft_LIB_NAME})
+
+SET(sfft_USE_FILE "@sfft_USE_FILE@")
+SET(sfft_CMAKE_DIR "@sfft_CMAKE_DIR@")
+
+MARK_AS_ADVANCED(sfft_LIBRARIES sfft_LIBRARY_DIR sfft_INCLUDE_DIRS sfft_USE_FILE)

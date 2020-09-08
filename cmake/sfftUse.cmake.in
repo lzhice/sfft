@@ -1,0 +1,31 @@
+############################################################
+#
+#
+# Copyright (c) sfft 2020
+#
+# AUTHOR:
+# Sylvain Prigent 
+# 
+######################################################################
+## 
+### Commentary: 
+## 
+######################################################################
+## 
+### Change log:
+## 
+######################################################################
+
+if(NOT sfft_USE_FILE_INCLUDED)
+
+   set(sfft_USE_FILE_INCLUDED 1)
+
+   include_directories(${sfft_INCLUDE_DIRS})
+
+   link_directories(${sfft_LIBRARY_DIRS})
+
+   set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${sfft_CMAKE_DIR})
+
+   include(sfftDependencies)
+   
+endif(NOT sfft_USE_FILE_INCLUDED)

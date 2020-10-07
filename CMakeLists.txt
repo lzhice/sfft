@@ -43,9 +43,9 @@ set(sfftProject_USE_DOXYGEN 0)
 ## OpemMP option
 ## #################################################################
 option(sfft_USE_OPENMP "use OpenMP" OFF)
-if (sfft_USE_OPENMP)
-    add_compile_definitions(sfftUSEOPENMP)
-endif(sfft_USE_OPENMP)
+if (SL_USE_OPENMP)
+    add_compile_definitions(SL_USE_OPENMP)
+endif(SL_USE_OPENMP)
 
 include(sfftDependencies)
 

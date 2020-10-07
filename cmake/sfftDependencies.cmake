@@ -17,9 +17,9 @@ if(${DOXYGEN_FOUND})
   set(sfft_USE_DOXYGEN 1)
 endif(${DOXYGEN_FOUND})
 
-if(${sfft_USE_OPENMP})
+if(${SL_USE_OPENMP})
   find_package(OpenMP REQUIRED)
-endif(${sfft_USE_OPENMP})  
+endif(${SL_USE_OPENMP})  
 
 ## #################################################################
 ## libfftw3
